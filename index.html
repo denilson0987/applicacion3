@@ -1,0 +1,356 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/p2.jpg','imagenes/p6.jpg','imagenes/k2.jpg','imagenes/f5.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+   
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="" data-back-btn-theme="a">
+     <h1>Volcánes</h1>
+   </div>
+   <div data-role="main" class="ui-content">
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>¿Que es un volcán?</h1>
+         <div>
+                <p>Según la mitología romana, Vulcano era el dios del fuego y los metales. Casado con Venus y padre de Júpiter y Juno, Vulcano era el creador de armas y armaduras para los héroes.
+
+La palabra volcán proviene de Vulcano. Se trata de un conducto que establece comunicación directa entre la superficie terrestre y los niveles profundos de la corteza terrestre. Los volcanes son aberturas que se encuentran en montañas o en la tierra; cada un cierto periodo de tiempo, expulsan lava, gases, cenizas y humo.
+</p>
+         <br>
+         </div>
+    <div>
+        <center>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('1','','imagenes/p2.jpg',1)"><img src="imagenes/p1.jpg" width="130" height="100" id="1"></a>
+       </center>
+        </div>
+    </div>
+    </div>
+
+<div>
+    <ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+    <li class="ui-first-child ui-last-child">
+    <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+    <h2>Volcán Popocatépelt</h2>
+     </a>
+    </li>
+    <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Volcán Kilimanjaro</h2>
+      </a>
+    </li>
+   <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+      <h2>Volcán Fuji</h2>
+      </a>
+    </li>
+
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="a">
+   <div>
+      <h4>Tercera Aplicación</h4>
+      <img src="imagenes/volcan.png" width="46" height="46">
+   </div>
+   <div>
+     <h4>Denilson Zepeda Alonso</h4>
+   </div>
+</div>
+</div>
+
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="a">
+    <h1>Volcán Popocatepelt</h1>
+    </div>
+    <!-- Start WOWSlider.com -->
+<iframe src="galeria/indexwow.html" style="width:600px;height:270px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+  <div data-role="collapsible" data-content-theme="false">
+        <h1>Tamaño</h1>
+         <div>
+                <p>Cubre una superficie de 283,192.53 hectáreas,tiene una altura de 5,426 metros sobre el nivel del mar. Posee un cráter elíptico de paredes empinadas con una profundidad de 150 metros desde el labio inferior, un diámetro mayor de 900 metros y un ancho total de 400 * 600 metros.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/p.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Antigüedad</h1>
+         <div>
+                <p>En la mitología mexica, Popocatépetl fue un valiente guerrero quién amaba a la doncella Iztaccíhuatl. Sin embargo existen diversas versiones de la misma leyenda, las cuales coinciden en un guerrero legendario llamado Popoca que al regresar victorioso del campo de batalla se encuentra con la inesperada muerte de su princesa amada, tras lo cual sube al pináculo del templo con ella en brazos y se entregan a sí mismos como ofrendas a los dioses; los dioses aceptan el sacrificio de su amor no consumado, y para conservarlos inmortales y eternos, deciden transformarlos en volcanes. Este es el origen mitológico del volcán Popocatépetl.</p>
+         <br>
+    </div>
+    <div>
+       <img src="imagenes/popoa.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Localización</h1>
+         <div>
+                <p>El Popocatépetl o montaña que humea, es un volcán localizado en el centro de México, en los límites territoriales de los estados de México, Morelos y Puebla, a 55 kilómetros del Distrito Federal.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/popou.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Actividad</h1>
+         <div>
+                <p>CIUDAD DE MÉXICO (09/ABR/2016).- El volcán Popocatépetl registró durante las últimas horas 215 exhalaciones de baja intensidad, seis explosiones y dos sismos volcanotectónicos, informó el Centro Nacional de Prevención de Desastres (Cenapred).
+ 
+La más importante explosión generó una columna de gases y cenizas de 1.5 kilómetros de altura que los vientos dispersaron al noreste y lanzó fragmentos incandescentes que se depositaron sobre la ladera oriental a una distancia menor a 300 metros desde el cráter.
+ 
+Por otro lado, ayer se registraron dos sismos volcanotectónicos, el primero con una magnitud de 1.7 y el segundo de magnitud 1.6, eventos que se localizaron en el sector sureste y noreste del volcán respectivamente.
+ 
+De acuerdo con el más reciente reporte de monitoreo sísmico del organismo durante la noche no se observó incandescencia sobre el cráter y desde este sábado por la mañana se ha podido ver una emisión de vapor de agua y gas en tono azulado que es dispersada por los vientos dominantes en dirección noreste.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/actip.jpg" width="50%"> </div>
+    </div>
+    
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Monitoreo</h1>
+         <div>
+                <p>Reporte del monitoreo de CENAPRED al volcán Popocatépetl el 25 de Enero del 2016.
+
+El Semáforo de Alerta Volcánica se encuentra en Amarillo Fase 2. El CENAPRED exhorta a NO ACERCARSE al volcán y sobre todo al cráter, por el peligro que implica la caída de fragmentos balísticos.
+
+En las últimas 24 horas, por medio de los registros sísmicos del sistema de monitoreo del volcán Popocatépetl, se identificaron 39 exhalaciones de baja intensidad y con ligeras cantidades de ceniza. Así mismo, también se registraron 4 explosiones el día de hoy a las 03:16h, 03:25h, 06:32h y 09:20h. Se tuvo visibilidad parcial y se observó una muy débil emisión de vapor de agua, gas y ceniza que los vientos dispersaron al este. Así mismo, se registraron 381 minutos de tremor. Adicionalmente se presentó un tren de explosiones acompañada de tremor, que inicio desde el día de ayer a las 08:42 h, sin embargo, durante las 24 hrs que cubre el conteo, solo se contabilizó 16:20 h. </p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/monip.jpg" width="50%"> </div>
+       
+       <a href="http://www.cenapred.unam.mx/es/">Para mas información click aqui</a>
+    </div>
+    
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Medidas de prevención</h1>
+         <div>
+      <p> En las grandes ciudades, como México, D.F., cuyo centro se encuentra a 72 km. del cráter del volcán, Puebla a unos 43 km., Cuernavaca a 63 km. o Tlaxcala a 53 km., los efectos de tal evento se limitarían a los problemas derivados de lluvias de cenizas volcánicas, similares a las del 30 de junio de 1997, pero más fuertes y con una proporción mayor de cenizas más gruesas.</p>
+                            
+         <br>
+         </div>
+    <div>
+      <img src="imagenes/m2.jpg" width="70%"> 
+   
+       <img src="imagenes/m3.jpg" width="70%"> 
+      </div>
+     
+   </div>
+   <div data-role="footer" data-theme="a">
+     <h4>Zepeda Alonso Denilson</h4>
+     </div>
+    </div>
+</div>
+  </div>
+ </div>      
+              
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="a">
+    <h1>Volcán Kilimanjaro</h1>
+    <!-- Start WOWSlider.com -->
+<iframe src="galeria2/indexwow2.html" style="width:550px;height:255px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+
+    </div>
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Tamaño</h1>
+         <div>
+                <p>Ostenta el título de la montaña más alta de África con 5,895 metros sobre el nivel del mar, así como la montaña independiente más alta del mundo. Se le considera volcán triple porque está constituido por 3 conos volcánicos o picos: Kibo, Mawenzi y Shira, de los cuales Kibo es el más alto de todos.</p>
+         <br>
+         </div>
+    <div>
+        <img src="imagenes/k2.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Antigüedad</h1>
+         <div>
+                <p>Su crecimiento inició hace menos de 1 millón de años, y cesó de hacerlo hace aproximadamente 450,000-300,000 años. Sin embargo, la formación de todo lo que lo conforma tiene más tiempo. Hace 2.5 millones de años, durante el Plioceno, Shira comenzó su actividad eruptiva, la cual finalizó hace 1.9 millones de años, y hace apenas 1 millón de años, Kibo y Mawenzi comenzaron a lanzar materiales del interior de la Tierra. La mayor parte de todo el Kilimanjaro se desarrolló durante el Pleistoceno.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/k6.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Localización</h1>
+         <div>
+                <p>El Monte Kilimanjaro es un volcán de triple cumbre situado en el noreste de la República de Tanzania, muy cerca de la frontera con Kenia, a unos 300 km al sur del ecuador.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/k7.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Actividad</h1>
+         <div>
+                <p>El deshielo de los glaciares de la cumbre del Kilimanjaro es una realidad. Estimados en 12 km² hacia 1900, no cubren hoy más que 2 km² y a este ritmo habrán desaparecido hacia 2020. El calentamiento global de la Tierra no basta para explicar este fenómeno. Puede provenir también de una lenta reactivación de la actividad volcánica, que se manifiesta por algunas fumarolas.
+
+La ascensión es técnicamente fácil, pero larga y penosa por el frío y la altitud. La ruta más frecuentada es la ruta Marangu. Las otras vías practicadas son las vías Machame, Mweka, y Shira. Aproximadamente 20 000 excursionistas intentan todos los años alcanzar la cumbre.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/k8.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Monitoreo</h1>
+         <div>
+                <p>La actividad eruptiva de este volcán pudo comenzar hace 2.5 millones de años en el cono Shira, como se ha mencionado, pero actualmente no se le conoce ninguna erupción histórica. La actividad está reducida a las fumarolas que escapan del cráter del cono Kibo, lo que ha provocado algunos derrumbes y deslizamientos de tierra.
+Según el Observatorio de la Tierra de la NASA, la última erupción del volcán pudo haber tenido lugar hace aproximadamente 100,000 años, pero según el Fondo Mundial para la Naturaleza, la última gran erupción ocurrió hace unos 360,000 años atrás y la última actividad volcánica de importancia data de hace 200 años.
+Mientras que Shira y Mawenzi se han extinguido, los científicos no descartan la posibilidad de que Kibo pueda hacer erupción algún día.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/k9.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Medidas de prevención</h1>
+         <div>
+     <p> La ciudad más afectada podria ser: Moshi, está situada en Tanzania, al sur de la montaña y constituye el principal punto de partida para su ascensión. comunica toda la región y sus parques. Dodoma, la capital, y Dar es Salaam se encuentran a 380 km al sudoeste y 450 km al sudeste respectivamente, mientras que Nairobi, en Kenia, se sitúa a 200 km al norte-noroeste.
+Asi que podrian ser estados afectados.</p>
+         <br>
+         </div>
+    <div>
+      <img src="imagenes/m2.jpg" width="70%"> 
+   
+       <img src="imagenes/m3.jpg" width="70%"> 
+      </div>
+     
+   </div>
+   <div data-role="footer" data-theme="a">
+     <h4>Zepeda Alonso Denilson</h4>
+     </div>
+    </div>
+</div>
+  </div>
+ </div>            
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="a">
+    <h1>Volcán Fuji</h1>
+    <!-- Start WOWSlider.com -->
+<iframe src="galeria3/indexwow3.html" style="width:600px;height:265px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+  </div>
+       <div data-role="collapsible" data-content-theme="false">
+        <h1>Tamaño</h1>
+         <div>
+                <p>El pico más alto del país mide 3,375.6 metros y se cataloga como volcán activo, es decir, muestra signos de actividad volcánica continua o ha entrado en erupción durante los últimos 10,000 años.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/f5.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Antigüedad</h1>
+         <div>
+                <p>La edad de este volcán está estimada en 40,000-10,000 años y actualmente está sobre un grupo de volcanes superpuestos. Antes de que Fuji existiese, ya se encontraban activos los volcanes Ashitaka, Hakone y Komitake, pero hace unos 100,000 años, el monte emergió al pie del Komitake, el cual estuvo precedido por el Sen Komitake, el núcleo de este volcán.
+Tras erupciones explosivas, 80,000-20,000 años atrás se creó un volcán de unos 3,000 metros de altura conocido como Ko-Fuji (Viejo Fuji), hasta que hace 10,000-17,000 años un enorme flujo de lava lo cubrió y paulatinamente formó el Shin-Fuji o Nuevo Fuji. El monte Fuji o Nuevo Fuji, tal como se conoce ahora, es producto de la actividad volcánica del Shin-Fuji, a partir de la solidificación de las capas de materiales expulsados; por ende, debajo del actual se encuentran los antiguos volcanes mencionados.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/f6.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Localización</h1>
+         <div>
+                <p>El volcán más famoso de Japón, mejor conocido como el Monte Fuji, se localiza en la Prefectura de Shizuoka, en la isla de Honshu y a unos 100 kilómetros al oeste de Tokio.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/f7.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Actividad</h1>
+         <div>
+                <p>La montaña tal como conocemos es el "nuevo volcán Fuji", que entró en actividad hace 10.000 años. Bajo este volcán se encuentra el "volcán Komitake" que se volvió activo hace 700.000 años, y el "antiguo volcán Fuji" que entró en actividad entre 100.000 años atrás y 1000 años atrás.
+
+En los alrededores del monte Fuji existió gran actividad volcánica desde hace millones de años. Hace 700.000 años, en el lugar donde actualmente se ubica el monte Fuji, un volcán conocido como monte Komitake (小御岳火山? literalmente, "pequeña montaña volcánica") entró en actividad. En ese momento, otro volcán, el monte Ashitaka (愛鷹山?) ubicado al sureste del monte Fuji, también fue altamente activo. La cima del antiguo volcán, Komitake, puede verse desde la cara norte del monte Fuji en la quinta estación, a 2.300 metros sobre el nivel del mar.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/f8.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Monitoreo</h1>
+         <div>
+                <p>El Monte Fuji se encuentra en riesgo de entrar en erupción, debido a la acumulación de presión desde el terremoto de 2011.
+
+El terremoto que provocó el devastador tsunami que mató a miles de personas en el año 2011 en Japón, ha acumulado una gran presión bajo el volcán del monte Fuji. Teniendo en cuenta que el volcán no ha entrado en erupción desde el año 1707, los científicos dicen que la acumulación de presión provocó el terremoto de 9.0 grados en la escala de Richter, dejando al volcán en un estado crítico.
+
+La investigación, fue llevada a cabo por científicos en el Instituto de las Ciencias de la Tierra, en Grenoble, Francia, con sus colegas japoneses, utilizando 800 sensores sísmicos que registraron datos después del seísmo, con objeto de dibujar las anomalías geológicas en el fluido de la corteza terrestre, que causó las ondas sísmicas.
+
+Los científicos destacan que su trabajo no afirma que el volcán entrará en erupción, pero muestra que se encuentra en un estado crítico.
+
+Se constató que las ondas sísmicas viajaron por todo el mundo varias veces, y que su movimiento hizo vibrar la corteza de la Tierra.
+
+El terremoto de magnitud 6.4 que tuvo lugar cuatro días después del tsunami, fue seguido de numerosas réplicas, indicando que el monte Fuji se encuentra bajo una enorme presión.
+Aunque los científicos de la universidad de NSW, insisten en que no pueden afirmar una relación directa de causa-efecto entre los terremotos y las erupciones volcánicas, sí que pueden explicar que el volcán Fuji se encuentra en un estado de presión, lo que significa que muestra un potencial alto para una erupción, siendo el riesgo mucho más elevado.
+
+Se cree que el terremoto podría haber liberado fluido que se encontraba atrapado en la corteza terrestre alrededor del monte Fuji, aunque el volcán está siendo monitoreado constantemente para observar cualquier indicio que pueda mostrar una erupción inminente.</p>
+         <br>
+         </div>
+    <div>
+       <img src="imagenes/f9.jpg" width="50%"> </div>
+    </div>
+    <div data-role="collapsible" data-content-theme="false">
+        <h1>Medidas de prevención</h1>
+         <div>
+                <p>Los lugares afectados en caso de que este volcán llegara a ser erupcion son principalmente la isla de Honshu y de todo Japón. Se encuentra entre las prefecturas de Shizuoka y Yamanashi en el Japón central y justo al oeste de Tokio,</p>
+         <br>
+         </div>
+    <div>
+      <img src="imagenes/m2.jpg" width="70%">
+   
+       <img src="imagenes/m3.jpg" width="70%"> 
+       </div>
+    
+   </div>
+    <div data-role="footer" data-theme="a">
+     <h4>Zepeda Alonso Denilson</h4>
+     </div>
+    </div>
+</div>
+  </div>
+ </div>                                   
+
+</body>
+</html>
